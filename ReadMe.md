@@ -1,3 +1,5 @@
+<img src="https://komarev.com/ghpvc/?username=Nihon-Development&color=8E64D0" alt="Nihon-Development" />
+
 ## Mercury Library 
 
 This Library Allows The Use Of Different Exploit Dynamic Link Librarys
@@ -16,5 +18,3 @@ For Making Your Own Make Sure To Credit "ImmuneLion318#0001"
 
 Indepth Documentation On Setting Up And Using Mercurys's Library
 Including Function Usage, Runtime Usage And Inject/Execute
-
-<img src="https://komarev.com/ghpvc/?username=Nihon-Development&color=8E64D0" alt="Nihon-Development" />

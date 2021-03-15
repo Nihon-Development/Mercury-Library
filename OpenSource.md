@@ -8,4 +8,5 @@
 Mercury Library Source --> [Click Me](https://github.com/Nihon-Development/Mercury-Library/tree/main/Mercury%20Library)
 
 ![Logo]
+
 [Logo]: https://pluralsight2.imgix.net/paths/images/visualstudio-2019-62bfdf4c9e.png "Visual Studio 2019"

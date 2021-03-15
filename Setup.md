@@ -1,7 +1,7 @@
 
-1. Download The Application Programming Interface --> [Click Me](Add Link)
+1. Download The Class Library --> [Click Me](https://github.com/Nihon-Development/Mercury-Library/blob/main/Class%20Library/Mercury%20Library.dll?raw=true)
 
-2. Add Nihon's Application Programming Interface As A Reference In Your Project
+2. Add Mercury's Library As A Reference In Your Project
 
 3. Making A Variable And Adding Usage
 

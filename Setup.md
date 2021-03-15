@@ -28,27 +28,23 @@ private void ExecuteButton(object sender EventArgs e)
 ## Pipe List
 
 ```lua
-EasyExploits
-WeAreDevs (WRD)
-ShadowCheats
-CheatSquad
-Krnl
-Fluxus
-Sk8r/ClubDark
-Oxygen U
-Axon
-Zeus
-RobloxHacks
-Pomo
-Aqua
-Phantom
-Desire
-Desire X
-Furk
-Electron
-Skisploit
-Spero
-Acrylix
-RoSploit
-Sentinel
+EasyExploits --> ocybedam
+
+WeAreDevs Lua --> WeAreDevsPublicAPI_Lua
+WeAreDevs LuaC --> WeAreDevsPublicAPI_LuaC
+WeAreDevs CMD --> WeAreDevsPublicAPI_CMD
+
+ShadowCheats --> qa6uPWYHm1LeUFsLosFF
+
+CheatSquad --> taStqdau1Ch1ee33
+
+Oxygen U --> OxygenU
+
+Acrylix --> Acrylix
+
+Sk8r/CheatSquad --> zxc
+
+Krnl --> krnlpipe
+
+RobloxHacksAPI --> RobloxHacks
 ```

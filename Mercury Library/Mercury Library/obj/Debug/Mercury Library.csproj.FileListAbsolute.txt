@@ -1,0 +1,6 @@
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\bin\Debug\Mercury Library.dll
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\bin\Debug\Mercury Library.pdb
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\obj\Debug\Mercury Library.csprojAssemblyReference.cache
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\obj\Debug\Mercury Library.csproj.CoreCompileInputs.cache
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\obj\Debug\Mercury Library.dll
+C:\Users\conno\OneDrive\Desktop\Visual Studio Coding Project\Misc\Mercury Library\Mercury Library\obj\Debug\Mercury Library.pdb

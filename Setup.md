@@ -27,7 +27,7 @@ private void ExecuteButton(object sender EventArgs e)
 
 ## Pipe List
 
-```xml
+```
 EasyExploits --> ocybedam
 
 WeAreDevs Lua --> WeAreDevsPublicAPI_Lua

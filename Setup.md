@@ -24,3 +24,31 @@ private void ExecuteButton(object sender EventArgs e)
     MercuryLib.ExecuteScript(LuaPipe, DllName, Avalon.Text); //In This Instance We Are Using Avalon
 }
 ```
+
+## Pipe List
+
+```lua
+EasyExploits
+WeAreDevs (WRD)
+ShadowCheats
+CheatSquad
+Krnl
+Fluxus
+Sk8r/ClubDark
+Oxygen U
+Axon
+Zeus
+RobloxHacks
+Pomo
+Aqua
+Phantom
+Desire
+Desire X
+Furk
+Electron
+Skisploit
+Spero
+Acrylix
+RoSploit
+Sentinel
+```

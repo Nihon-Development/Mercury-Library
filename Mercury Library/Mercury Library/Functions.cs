@@ -14,21 +14,26 @@ namespace MercuryLibrary
 {
     public class Functions
     {
-        public bool IsAttached(string LuaPipe)
+        public bool IsAttached()
         {
-            return NamedPipes.NamedPipeExist(LuaPipe);
+            return NamedPipes.NamedPipeExist(Settings.LuaPipe);
+        }
+        
+        public bool DoesDllExist()
+        {
+            return File.Exists(Settings.DllName);
         }
 
-        public void Inject(string LuaPipe, string DllName)
+        public void Inject()
         {
-            if (NamedPipes.NamedPipeExist(LuaPipe))
+            if (NamedPipes.NamedPipeExist(Settings.LuaPipe))
             {
                 MessageBox.Show("Already Attached", "Error: Already Attached", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
-            else if (!NamedPipes.NamedPipeExist(LuaPipe))
+            else if (!NamedPipes.NamedPipeExist(Settings.LuaPipe))
             {
-                switch (Injector.DllInjector.GetInstance.Inject("RobloxPlayerBeta", AppDomain.CurrentDomain.BaseDirectory + DllName))
+                switch (Injector.DllInjector.GetInstance.Inject("RobloxPlayerBeta", AppDomain.CurrentDomain.BaseDirectory + Settings.DllName))
                 {
                     case Injector.DllInjectionResult.DllNotFound:
                         MessageBox.Show("Dll Missing Or Wasn't Found", "Error: Dll Missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -43,11 +48,11 @@ namespace MercuryLibrary
             }
         }
 
-        public void ExecuteScript(string LuaPipe, string DllName, string Script)
+        public void ExecuteScript(string Script)
         {
-            if (NamedPipes.NamedPipeExist(LuaPipe))
+            if (NamedPipes.NamedPipeExist(Settings.LuaPipe))
             {
-                using (NamedPipeClientStream namedPipeClientStream = new NamedPipeClientStream(".", LuaPipe, PipeDirection.Out))
+                using (NamedPipeClientStream namedPipeClientStream = new NamedPipeClientStream(".", Settings.LuaPipe, PipeDirection.Out))
                 {
                     namedPipeClientStream.Connect();
                     using (StreamWriter streamWriter = new StreamWriter(namedPipeClientStream, Encoding.Default, 999999))
@@ -59,13 +64,19 @@ namespace MercuryLibrary
                 }
                 return;
             }
-            if (File.Exists(DllName))
+            if (File.Exists(Settings.DllName))
             {
                 MessageBox.Show("Not Attached", "Error: Not Attached", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             MessageBox.Show("Dll Not Found", "Error: Dll Missing", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+    }
+
+    public class Settings
+    {
+        public static string LuaPipe;
+        public static string DllName;
     }
 
     internal class NamedPipes

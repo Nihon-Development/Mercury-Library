@@ -1,5 +1,5 @@
 
-1. Download The Class Library --> [Click Me](https://github.com/Nihon-Development/Mercury-Library/blob/main/Class%20Library/Mercury%20Library.dll?raw=true)
+1. Download The Class Library --> [Click Me](https://github.com/Nihon-Development/Mercury-Library/blob/main/Mercury%20Dll/Mercury%20Library.dll?raw=true)
 
 2. Add Mercury's Library As A Reference In Your Project
 
@@ -11,17 +11,25 @@ using MercuryLibrary;
 MercuryLibrary.Functions MercuryLib = new MercuryLibrary.Functions();
 ```
 
-4. Using Functions
+4. Set Mercury Settings
+
+```csharp
+MercuryLib.Settings.LuaPipe = ""; //Put These Under A Loaded Event
+MercuryLib.Settings.DllName = "";
+```
+
+5. Using Functions
 
 ```csharp
 private void InjectButton(object sender EventArgs e)
 {
-    MercuryLib.Inject(LuaPipe DllName); //Enter LuaPipe And Dll Name
+    MercuryLib.Inject(); 
 }
 
 private void ExecuteButton(object sender EventArgs e)
 {
-    MercuryLib.ExecuteScript(LuaPipe, DllName, Avalon.Text); //In This Instance We Are Using Avalon
+    MercuryLib.ExecuteScript(Avalon.Text); //In This Instance We Are Using Avalon
+    MercuryLib.ExecuteScript("print("Made With Mercury Library")"); // Instance Of Executing A Script Directly
 }
 ```
 

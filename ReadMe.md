@@ -4,7 +4,7 @@
 
 This Library Allows The Use Of Different Exploit Dynamic Link Librarys
 Via Named Pipe Client And Dll Name To Use Properly Have The Dll You Intend On Using And Enter
-The Pipe And Dll Name Within The Functions Args 
+The Pipe And Dll Name Within The Settings Strings
 
 ## Open Source
 
